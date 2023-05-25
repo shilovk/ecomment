@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ecommentable_id: 1
+  ecommentable_type: Article
+  text: MyText1
+
+two:
+  ecommentable_id: 1
+  ecommentable_type: Article
+  text: MyText2
