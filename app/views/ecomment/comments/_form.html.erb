@@ -1,0 +1,10 @@
+<h3>New comment</h3>
+<%= form_with model: [ecommentable, ecommentable.comments.build] do |form| %>
+  <%= form.hidden_field :ecommentable_id, value: ecommentable.id %>
+  <%= form.hidden_field :ecommentable_type, value: ecommentable.class %>
+  <p>
+    <%= form.label :text %><br>
+    <%= form.text_area :text %>
+  </p>
+  <%= form.submit %>
+<% end %>

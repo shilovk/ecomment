@@ -10,17 +10,26 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-*
+/test/dummy/db/*.sqlite3
+/test/dummy/db/*.sqlite3-*
 
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/test/dummy/log/*
+/test/dummy/tmp/*
+!/test/dummy/log/.keep
+!/test/dummy/tmp/.keep
 
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
+/test/dummy/tmp/pids/*
+!/test/dummy/tmp/pids/
+!/test/dummy/tmp/pids/.keep
 
 # Ignore uploaded files in development.
 /storage/*
@@ -28,8 +37,15 @@
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
+/test/dummy/storage/*
+!/test/dummy/storage/.keep
+/test/dummy/tmp/storage/*
+!/test/dummy/tmp/storage/
+!/test/dummy/tmp/storage/.keep
 
 /public/assets
+/test/dummy/public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/test/dummy/config/master.key
